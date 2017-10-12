@@ -1,0 +1,103 @@
+
+/*  nav bar*/
+
+nav,header,footer{
+  display: block;
+}
+
+body{
+  line-height: 1;
+  margin: 0;
+
+}
+
+/* Nav bar*/
+nav {
+  width: 100%;
+  margin: 0; 
+}
+nav ul{
+  background-color: #eee; 
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right{
+  float: right;
+  list-style: none;
+}
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+
+}
+
+ul.topnav li a:hover {
+  background-color: #8880ff;
+  color: #fff;
+}
+
+/* body*/
+body{
+
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.container.signin-container{
+  margin:8%;
+
+  
+}
+
+
+.card.signin-card{
+  padding: 40px 0px 20px;
+  background:#f4f4f4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, .5);
+  -moz-box-shadow:2px 2px 5px rgba(0, 0, 0, .5);
+  size: 200px;
+
+}
+
+img.signin-img{
+  padding:  2rem 2rem;
+  margin: auto;
+  display: block;
+
+}
+form.signin-form{
+  max-width: 350px;
+  margin: auto;
+}
+button.signin-btn{
+  color: #ffffff;
+  background-color: skyblue;
+  width: 100%
+
+}
+a.create-new-account{
+  text-align: center;
+  display: block;
+}
+
+/* Profile avatar border image*/
+}
+.borderImg{
+  border-radius:50%;
+  width: 300px;
+  height: 300px;
+}
