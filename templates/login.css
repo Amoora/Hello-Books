@@ -50,9 +50,7 @@ ul.topnav li a:hover {
 /* body*/
 body{
 
-  background-image: url("./img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color:#CFD8DC;
   
 }
 
