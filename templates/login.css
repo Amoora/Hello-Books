@@ -1,13 +1,17 @@
 
+
 /*  nav bar*/
 
 nav,header,footer{
   display: block;
 }
 
+
+/* body*/
 body{
   line-height: 1;
   margin: 0;
+  background-color: #B0BEC5;
 
 }
 
@@ -46,13 +50,12 @@ ul.topnav li a:hover {
   background-color: #8880ff;
   color: #fff;
 }
-
-/* body*/
-body{
-
-  background-color:#CFD8DC;
-  
+.textcontainer{
+  text-align: center;
+  padding-top: 40px;
 }
+
+
 
 .container.signin-container{
   margin:8%;
@@ -60,15 +63,27 @@ body{
   
 }
 
+.editProfile-card{
+
+  background:#f4f4f4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+ 
+
+}
+
 
 .card.signin-card{
   padding: 40px 0px 20px;
-  background:#f4f4f4;
+  background:#CFD8DC;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   -webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, .5);
   -moz-box-shadow:2px 2px 5px rgba(0, 0, 0, .5);
   size: 200px;
 
+}
+
+.ediptProfile-container {
+  margin: 15%;
 }
 
 img.signin-img{
@@ -98,4 +113,9 @@ a.create-new-account{
   border-radius:50%;
   width: 300px;
   height: 300px;
+}
+.imgBook{
+  float:right;
+  width: 50%;
+  height:50%;
 }
