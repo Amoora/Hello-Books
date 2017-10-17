@@ -1,7 +1,6 @@
 
 body {
   background-color: #B0BEC5;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -46,9 +45,35 @@ ul.topnav li a:hover {
  background-color:#90A4AE;
 }
 
+/* top login and sign up buttons*/
+
+button:hover{
+  background-color: #8880ff;
+}
+.btnsignup {
+  margin-left: 50px;
+  margin-bottom: 30px;
+
+}
+.btnlogin{
+  margin-left: 500px;
+  margin-bottom: 30px;
 
 
-h1 {
+
+}
+.popular-con{
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+.favorites-con{
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+h1.display-3{
     padding-top: 50px;
     font-size: 4em;
     text-transform: capitalize;
@@ -72,19 +97,60 @@ h1 {
   width: 55%;
 
 }
-.col-img{
-   transform: scale(1.05);
-}
 
 h3 {
   text-align: center;
 }
 p.lead{
   text-align: center;
+  color: black ;
+  
 }
-p{
-  color: white;
+
+/*bookdetails*/
+
+.book-dets{
+  background: red;
+  margin: 0 auto;
+} 
+
+..book-detail-image{
+  margin: 0 auto;
 }
-.sec-col{
-  padding-bottom: 20px;
+
+.book-detail-image img{
+  max-height: 250px;
+  max-width:200px;
+  margin: auto;
+}
+
+.book-detail-txt-holder {
+  max-height: 509.8px;
+  max-width:579.5px;
+  /*background: red;*/
+  height: 400px;
+  border-bottom: 1px solid black;
+}
+
+
+.btn-bookdetail{
+  display: block;
+  margin-left: 250px;
+}
+
+#voting{
+   width:30px;
+   height:40px;
+}
+.upvote{
+   width:30px;
+   height: 20px;
+   background-image: url(./templates/img/logo.png);
+   cursor: pointer;
+}
+.downvote{
+   width:30px;
+   height: 20px;
+   background: url('./templates/img/logo.png') 0 0 no-repeat;
+   cursor: pointer;
 }
