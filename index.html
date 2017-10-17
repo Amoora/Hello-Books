@@ -4,31 +4,29 @@
       <title> Hello Books</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-      <link rel="stylesheet" href="././templates/hello-books.css">
+      <link rel="stylesheet" href="./templates/hello-books.css">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
             <!-- Latest  JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </head>
 
 
  <body class="page1" >
 
-  <nav >
-  <ul  class="topnav">
-				<li><a class="navbar-brand" href="#">
-		            <img src="././templates/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-	                     hello books </a>
-			 	<li> <a href="index.html">home </a></li>
-				<li> <a href="profile.html">profile </a></li>
-				<li> <a href="#">popular books </a></li>
-				<li class="topnav-right"> <a href="register.html">Sign Up </a></li>
-				<li class="topnav-right"> <a href="login.html"> Sign in</a></li>
+                <nav >
+                <ul  class="topnav">
+                <li><a class="navbar-brand" href="#">
+		<img src="./templates/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+	          hello books </a>
+		<li> <a href="index.html">home </a></li>
+		<li> <a href="profile.html">profile </a></li>
+		<li> <a href="#">popular books </a></li>
+	        </ul>
+			
+                </nav>
 
-</ul>
-    </nav>
-
-
+      <!--jumbotron -->
        <div class="jumbotron  jumbotron-rl">
          <div class="container">
           <h1 class="display-3">Welcome to hello Books Library!</h1>
@@ -36,7 +34,34 @@
         </div>
       </div>
 
+      <section>
+        <a href="login.html">
+      	<button type="button" class="btn  btn-lg btnlogin"> login</button> </a>
+      	<a href="Register.html">
+      	<button type="button" class="btn btn-lg btnsignup">sign Up</button></a>
+      </section>
+
+ <!-- Search Bar -->
       <div class="container">
+	<div class="row">
+        <div class="col-md-6">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" style="background: transparent; border: solid black;" class="form-control input-lg" placeholder="Search Books" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class=" fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<!-- end search bar -->
+
+
+      <div class="container popular-con">
       	<h3> most popular books</h3>
       </div>
 
@@ -49,7 +74,7 @@
 					<img class="img-fluid imgCenter" src="./templates/img/book1.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details</button>
+						 <a href="bookDetails.html"> <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details</button></a><p class="lead"> 8 remains</p>
 					   </div>
 						
 					</div>
@@ -59,7 +84,7 @@
 					<img class="img-fluid imgCenter" src="./templates/img/book4.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details</button>
+						 <a href="bookDetails.html"> <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details</button></a><p class="lead"> 2 remains</p>
 					   </div>
 						
 					</div>
@@ -68,7 +93,7 @@
 					<img class="img-fluid imgCenter" src="./templates/img/book3.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button>
+						 <a href="bookDetails.html"> <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button></a><p class="lead"> 7 remains</p>
 					   </div>
 						
 					</div>
@@ -77,23 +102,19 @@
 					<img class="img-fluid imgCenter" src="./templates/img/book2.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button>
+						 <a href="bookDetails.html"><button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button></a><p class="lead"> 1 remains</p>
 					   </div>
 						
 					</div>
 				</div>
 
-
-            
-				
 			</div>
-			
 		</div>
 	</div>
 
 </div>
- <div class="container-fluid">
-      	<h3> most popular books</h3>
+ <div class="container-fluid favorites-con">
+      	<h3> favorites (base on books you love)</h3>
       </div>
 
  <div class="sectionDark sec-col">
@@ -104,7 +125,7 @@
 					<img class="img-fluid imgCenter" src="././templates/img/book1.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button>
+						  <a href="bookDetails.html"><button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button></a><p class="lead"> 2 remains</p>
 					   </div>
 						
 					</div>
@@ -114,7 +135,7 @@
 					<img class="img-fluid imgCenter" src="././templates/img/book2.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> ooketails</button>
+						  <a href="bookDetails.html"><button type="button"  class="btn btn-lg btn-danger btnCenter"> Book Details</button></a><p class="lead"> 7 remains</p>
 					   </div>
 						
 					</div>
@@ -123,7 +144,7 @@
 					<img class="img-fluid imgCenter" src="././templates/img/book3.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details</button>
+						 <a href="bookDetails.html"> <button type="button"  class="btn btn-lg btn-danger btnCenter"> Book Details</button></a><p class="lead"> 9 remains</p>
 					   </div>
 						
 					</div>
@@ -132,17 +153,12 @@
 					<img class="img-fluid imgCenter" src="././templates/img/book4.jpg">
 					<div class="row">
 						<div class="col-sm-12"><
-						  <button type="button" class="btn btn-lg btn-danger btnCenter"> Book Details </button>
+						  <a href="bookDetails.html"><button type="button"  class="btn btn-lg btn-danger btnCenter"> Book Details </button></a><p class="lead"> 0 remains</p>
 					   </div>
 						
 					</div>
 				</div>
-
-
-            
-				
-			</div>
-			
+		          </div>
 		</div>
 	</div>
 
@@ -151,7 +167,7 @@
 
 
  </body>   
- <footer class="footer bg-inverse">
+ <footer class="footer bg-inverse footer-custom">
 	<div class="container-fluid ">
 		<div class="row">
 			<div class="col-sm-12 col-lg-3">
