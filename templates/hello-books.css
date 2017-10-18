@@ -154,3 +154,33 @@ p.lead{
    background: url('./templates/img/logo.png') 0 0 no-repeat;
    cursor: pointer;
 }
+
+/* Admin Dashboard*/
+.dropdown {
+   display:inline-block;
+}
+
+.dropdown-content {
+  background: gray;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+}
+
+.dropdown-content a:hover {
+background: #bada55;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
