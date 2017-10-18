@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> Profile</title>
+	  <title> Hello Books</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./templates/hello-books.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <!-- Awesome Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <!-- Latest  JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <nav >
+      <ul  class="topnav">
+        <li><a class="navbar-brand" href="#">
+    <img src="./templates/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  hello books </a>
+         <li class="topnav-right"><a href="#">Notifications<i class="fa fa-comment" title="Align Center">9</i></a></li>
+         <li class="topnav-right"> <a href="Register.html">Sign Out </a></li>
+       
+
+      </ul>
+    </nav>
+    <section>
+           <div class="row content">
+                    <div class="col-md-3">
+                      <div class="card" style="width: 20rem; background-color: #CFD8DC">
+                         <img class="card-img-top" src="./templates/img/Avatar.png" alt="Card image cap">
+                            <div class="card-block">
+                               <h4 class="card-title">Profile</h4>
+                                 <p class="card-text">Full Name: Saadat Aliyu</p>
+                             </div>
+                   <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Date Of Birth: 8/july/1993</li>
+                   <li class="list-group-item">hobby: Reading</li>
+                   <li class="list-group-item">Email: soosy@thte.com</li>
+                  </ul>
+                  <div class="card-block">
+                   <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalHorizontal">Edit Profile</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Edit Profile
+                </h4>
+            </div>
+            
+            <!-- MOdal Contents -->
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" 
+                        id="inputEmail3" placeholder="Email"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control"
+                            id="inputPassword3" placeholder="Password"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >retype paswrd</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control"
+                            id="inputPassword3" placeholder="Password"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                           <input type="file" class="form-control">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">save</button>
+                    </div>
+                  </div>
+                </form>    
+            </div>
+            <!--- end of modal contents -->
+               </div>
+            </div>
+                      </div>   
+                    <!-- end of modal --> 
+             </div>   
+        </div>
+     </div> 
+
+<!-- table -->
+  <div class="col-md-9 col-tablecontent">
+    <h1 style="text-align: center; margin-top: 20px;"> Book History </h1>
+  <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Date Burrowed</th>
+      <th> Return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>The Girl on the train</td>
+      <td>patick Hawkings</td>
+      <td>10/10/2017</td>
+      <td>
+      <a href="#" class="btn waves-effect  action-btn">Return</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Lost in the woods</td>
+      <td>Thornton mark</td>
+      <td>3/7/2017</td>
+      <td>
+      <a href="#" class="btn waves-effect  action-btn">Return</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Things fall apart</td>
+      <td>chinua achebe</td>
+      <td>5/3/2016</td>
+      <td>
+      <a href="#" class="btn waves-effect  action-btn">Return</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>The village cries</td>
+      <td>JAcob steve</td>
+      <td>4/2/2016</td>
+      <td>
+      <a href="#" class="btn waves-effect  action-btn">Return</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- pagination -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1"><</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">></a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div> 
+
+</section>
+
+
+                        
+  
+          
+      
+</body>
+
+
+</html>
