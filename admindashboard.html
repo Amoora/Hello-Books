@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Admin </title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./templates/hello-books.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <!-- Awesome Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <!-- Latest  JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+          <nav >
+            <ul  class="topnav">
+                <li><a class="navbar-brand" href="index.html">
+               <img src="./templates/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                hello books </a></li>
+          <li class="dropdown topnav-right">
+        <a href="#" class="dropbtn">Admin</a>
+        <div class="dropdown-content">
+          <a href="books.html">Book List</a>
+          <a href="index.html">Sign Out</a>
+        </div>
+      </li>
+</ul>
+    </nav>
+     <h3 style="margin-left: 500px;"></h3>
+    <div class="container list-books">
+      <div class="table-responsive">          
+        <table class="table table-hover">
+          <thead style="background-color:#CFD8DC; color:black;">
+            <tr>
+              <th>#</th>
+              <th>Book Title</th>
+              <th>Author</th>
+              <th>Borrower</th>
+              <th>Date Borrowed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>the girl on the train</td>
+              <td>Patrick hawkins</td>
+              <td>saadat Ali</td>
+              <td>20/10/2017</td>
+            </tr>
+
+          <!-- ROW 2 -->
+            <tr>
+              <td>2</td>
+              <td>Bring back our girls</td>
+              <td>patience ozokwor</td>
+              <td>timothy john</td>
+              <td>4/10/2017</td>
+            </tr>
+
+            <!-- row 3 -->
+            <tr>
+              <td>3</td>
+              <td>big deal</td>
+              <td>Timothy Ipol</td>
+              <td>Aisha modube</td>
+              <td>2/5/2017</td>
+            </tr>
+            <!-- row 4-->
+             <tr>
+              <td>3</td>
+              <td>Thinsg fall apart</td>
+              <td>Chinua achebe</td>
+              <td>john snow</td>
+              <td>2/1/2017</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>
+
+<!-- delete section -->
+<div class="container profile" style="padding-bottom:50px">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="history-header">
+          <h3 style="margin-left: 500px;">Delete Book</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container list-books">
+      <div class="table-responsive">          
+        <table class="table table-hover">
+          <thead style="background-color:#CFD8DC; color:black;">
+            <tr>
+              <th>#</th>
+              <th>Book Title</th>
+              <th>Author</th>
+              <th>Date Borrowed</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>The Girl on the train</td>
+              <td>patrick hawkins</td>
+              <td>20/10/2017</td>
+              <td><button class="btn ">Delete</button> </td>
+           
+            </tr>
+
+         
+            <tr>
+              <td>2</td>
+              <td>Beyon the cries</td>
+              <td>Steve Harvey</td>
+              <td>4/10/2017</td>
+              <td><button class="btn">Delete</button> </td>
+            </tr>
+
+      
+            <tr class="danger">
+              <td>3</td>
+              <td>Thinsga fall apart</td>
+              <td>Jeremy Hondara</td>
+              <td>2/5/2017</td>
+              <td><button class="btn ">Delete</button> </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>
+    </div>
+
+</body>
+ <footer class="footer bg-inverse footer-custom">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-12 col-lg-3">
+           
+        <p> Contact us: <a href="#facebook">facebook</a>  </p>
+        <p> © 2017</p>
+      </div>
+    </div>
+  </div>
+
+  
+</footer>
+</html>
